@@ -23,6 +23,8 @@ var pjax;
 const lazyload = lozad('img, [data-background-image]', {
     loaded: function(el) {
         el.addClass('lozaded');
+        el.style.backgroundSize = 'cover';
+        el.style.backgroundPosition = 'center center';
     }
 })
 
